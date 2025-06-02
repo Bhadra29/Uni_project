@@ -2,26 +2,65 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="viewport" content#="width=device-width,initial-scale=1.0"/>
 <title>Doctor Dashboard -University Medical Center</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100 text-gray-800">
     <!--Header-->
     <header class="bg-blue-900 text-white p-4">
+        
         <div class="myDiv">
             <img src="image.png" class ="logo" alt="Logo">
-        </div>
+        
         <div class="text">
 
-        
-            <h2> Medical Center-Doctor Dashboard </h2>
-            <h3>University Of Ruhuna</h3>
-            <h3>Caring is our mission</h3>
+             <h1>Medical Center - Doctor Dashboard </h1>
+             <h2>University Of Ruhuna</h2>
+            
          </div>
+        </div>
     </header>
     <section class="bg-white rounded-lg shadow p-4"></section>
-    <h2 class="text-xl font-semibold mb-4">Search Patient</h2>
+    
 
+
+    <nav class="navbar">
+  
+  
+  <div class="doctor-info">
+    
+    <img src="doctorphoto.png" alt="Doctor Photo">
+    <span class="name">Dr jane smith</span>
+  </div>
+  <div class="search-bar">
+    <span class="search-icon">&#128269;</span>
+    <input type="text" placeholder="Search here">
+  </div>
+  
+  <div class="button" onclick="Home">
+  <button class="home">
+<img src="https://img.icons8.com/?size=100&id=jPDM9Pv61iP5&format=png&color=000000" alt="Home Photo" class = "Home">
+  </button>
+    </div>
+<div class="button" onclick="logout">
+  <button class="logout-btn">
+    <img src="https://img.icons8.com/?size=100&id=arrojWw9F5j5&format=png&color=000000" alt="Log Photo" class = "Log">
+  </button>
+</div>
+</nav>
+<div class="searchsection">
+  <h2>Search Patient</h2>
+
+<div class="searchpatient">
+
+  <input type="text" id = "search" placeholder="Enter Register Number">
+  <button>Search</button>
+</div>
+</div>
+
+<div class ="patient details">
+  <p>hi</p>
+</div>
 </body>
 </html>
