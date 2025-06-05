@@ -55,12 +55,49 @@
 <div class="searchpatient">
 
   <input type="text" id = "search" placeholder="Enter Register Number">
-  <button>Search</button>
+  <button onclick="searchPatient()">Search</button>
 </div>
 </div>
 
-<div class ="patient details">
-  <p>hi</p>
+<div class ="patient-container"  class = "hidden">
+  <h2>Patient Information</h2>
+  <p><strong>Name:</strong><span id="name">-</span></p>
+  <p><strong>Age:</strong><span id="age">-</span></p>
+  <p><strong>Allergies:</strong><span id="allergies">-</span></p>
+  <p><strong>Chronic disease</strong><span id="chronic">-</span></p>
+  
+</div>
+  <div class = "p-container">
+    <h2>Prescription</h2>
+    
+    <table class = "Prescription-table">
+      <thead>
+      <tr>
+        <th>Medicine name</th>
+        <th>Dosage</th>
+        <th>Frequency</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td>tggf</td>
+      <td>ghgh</td>
+      <td>ghg</td>
+
+    </tr>
+    </tbody>
+    </table>
+    <button onclick = "addRow()" class ="add-row-button">Add Row</button>
+    <textarea placeholder="Notes" class = "prescription-notes"></textarea>
+    <button class="pdf-btn">Generate PDF</button>
+
+  </div>
+
+
+  
+  
+
 </div>
 </body>
 </html>
