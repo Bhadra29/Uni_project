@@ -65,7 +65,7 @@
   <p><strong>Age:</strong><span id="age">-</span></p>
   <p><strong>Allergies:</strong><span id="allergies">-</span></p>
   <p><strong>Chronic disease</strong><span id="chronic">-</span></p>
-  
+  <button>View Patient History</button>
 </div>
   <div class = "p-container">
     <h2>Prescription</h2>
@@ -91,9 +91,19 @@
     <button onclick = "addRow()" class ="add-row-button">Add Row</button>
     <textarea placeholder="Notes" class = "prescription-notes"></textarea>
     <button class="pdf-btn">Generate PDF</button>
-
+    <button class="upload">Upload PDF Patient</button>
   </div>
 
+  <div class = "emergency">
+    <h2>Emergency</h2>
+    <form method="POST" action="send_emergency_email.php">
+      <input type="hidden" name="patient_id" value="<?= $patient['id']?>">
+      <button class="emergency-btn" type="submit" name="send_emergency_email" style="background:rgb(0, 0, 0);color:white;">
+      Send Emergency Email
+    </button>
+    </form>
+
+    
 
   
   
